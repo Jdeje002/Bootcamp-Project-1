@@ -18,10 +18,7 @@ $(document).ready(function(){
 })
 // database varriabe for firebase call
 var database = firebase.database()
-<<<<<<< HEAD
 var userRecall = localStorage.getItem('name')
-=======
->>>>>>> 21675e21aeccdef3ec548c973b65c7bb1b34d8fd
 // all variable declared globally to use
     var mapSearch
     var inputSearch
@@ -131,8 +128,8 @@ $("#submitBtn").on("click", function () {
                     var timeInput = moment(eventTime).format("dddd, MMMM Do YYYY, h:mm a")
                     $("#addMeet").append("<div class='card w3-animate-left' style='width: 20rem;'><img class='card-img-top'src="+
                     image+" alt='alt-card-top'><div class='card-block'><h4 class='card-title'>"+
-                    eventName+"</h4><p class='event-address'></p><p class='event-time'>"+timeInput+"</p><a href='"+
-                    meetupURL+"'target='_blank'>Go To Event</a></p></div><hr>")
+                    eventName+"</h4><p class='event-address'></p><p class='event-time'>"+timeInput+"</p><button><a href='"+
+                    meetupURL+"'target='_blank'>Go To Event</a></button></p></div><hr>")
 
                     // $(".event-address").append(locationDetails)
                     
