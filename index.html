@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Copse|Farsan|Pacifico|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Copse|Farsan|Pacifico|Quicksand" rel="stylesheet"><script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.tcycle.js"></script>
     <link rel="stylesheet" href="Assets/css/style.css">
+
 </head>
 <style>
     body {
@@ -93,11 +95,11 @@
         transform: translate(-50%, -50%);
         opacity: .8;
         font-family: 'Abril Fatface', serif;
-        background-color:slategray;
+
         width: 85%;
         height: 85%;
-        background-image: url("Assets/img/img.jpg");
         background-position: center;
+
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -171,8 +173,8 @@
 
     #intro {
         color: black;
-        background-color: slategray;
-        opacity: 1;
+        
+        opacity: .9;
         /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
         font-family: 'Copse', serif;
         
@@ -180,37 +182,37 @@
     }
     @-webkit-keyframes colorchange {
      0% {
-       color:red;
+       color:black;
      }
      10% { 
-       color:yellow
+       color:white;
      }
      20% { 
-       color: teal;
+       color: black;
      }
      30% {
        color: white;
      }
      40% {
-       color: darkblue;
+        color: white;
      }
      50% {
-       color: hotpink;
+        color: black;
      }
      60% {
-       color: goldenrod;
+        color: white;
      }
      70% {
-       color: teal;
+        color: black;
      }
      80% {
-       color: blue;
+        color: white;
      }
      90% {
-       color: darkblue;
+        color: black;
      }
      100% {
-       color: greenyellow;
+        color: white;
      }
 
     }
@@ -253,10 +255,14 @@
 </style>
 </head>
 
+
 <body>
-    <video autoplay muted loop id="myVideo">
-        <source src="Assets/img/My Movie 1.mp4" type="video/mp4">
-    </video>
+    <div id="bg" class="tcycle" data-speed=3300 data-timeout=7000>
+        <img src="Assets/img/road.jpeg">
+        <img src="Assets/img/jump.jpeg">
+        <img src="Assets/img/people.jpeg">
+        <img src="Assets/img/people2.jpeg">
+    </div>
 
     <div id="intro" style="opacity: .9" class="textBox text-center">
 
